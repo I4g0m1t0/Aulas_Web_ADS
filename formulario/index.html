@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://google.com" target="_blank">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="user_name">Nome</label>
+            <input type="text" id="user_name" name="user_name">
+                <br>
+            <label for="user_birth">Data de Nascimento</label>
+            <input type="date" id="user_birth" name="user_birth">
+                <br>
+            <label for="user_password">Senha</label>
+            <input type="password" id="user_password" name="user_password">
+                <br>
+            <label for="user_color">Cor preferida</label>
+            <input type="color" id="user_color" name="user_color">
+        </fieldset>
+
+        <fieldset>
+            <label for="">Você é brasileiro?
+                <input type="radio">Sim</input>
+                <input type="radio">Não</input>
+            </label>
+            <br>
+            <label for="">Quais estilos musicais favoritos?</label>
+            <input type="checkbox" name="question_3[]">Rock
+            <input type="checkbox" name="question_3[]">Blues
+            <input type="checkbox" name="question_3[]">Soul's
+            <input type="checkbox" name="question_3[]">MPB
+            <input type="checkbox" name="question_3[]">Pagode
+            <input type="checkbox" name="question_3[]">Sertanejo
+            <br>
+            <label for="">Quais tipos de bicho você teria?</label>
+            <select name="qustion_5" id="qustion_5">
+                <option value="">Doguinho</option>
+                <option value="">Gato</option>
+                <option value="">Peixe</option>
+                <option value="">Capivara</option>
+                <option value="">Rinoceronte</option>
+            </select>
+                <br>
+            <label for="">Conte um fato engraçado</label>
+            <textarea name="question_6" id="question_6" cols="50" rows="5"></textarea>
+        </fieldset>
+        <button type="submit">Salvar</button>
+    </form>
+</body>
+</html>

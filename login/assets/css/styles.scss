@@ -1,0 +1,60 @@
+body {
+    font-family: sans-serif; /* fonte sem serifa */
+    font-size: 16px; /* tamanho da fonte, o tamnho padrão já é 16px */
+    background-color: rgb(250 94 156);
+  }
+  .container {
+    max-width: 600px; /* Largura máxima do container */
+    background-color: white;
+    /* border-width: 1px;
+    border-style: solid;
+    border-color: red; */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+  
+    border-radius: 50px;
+  
+  }
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(255, 213, 234);
+    padding: 10px;
+    margin-bottom: 20px;
+  
+  }
+  
+  .menu li {
+    font-weight: bold;
+  }
+  
+  h1 {
+    font-weight: bold;
+    font-size: 1.5em; /* unidade de medida baseada no tamanho atual */
+    margin-bottom: 10px; /* CHALLENGE!!!! Colocar em EM */
+  }
+  .text-center {
+    text-align: center; /* Alinha o texto dos filhos do elemento*/
+    color: black; /* Define a cor dos filhos do elemento*/
+  }
+  
+  .h1 {
+    color: purple;
+  }
+  
+  .img-fluid {
+    width: 100%; /* Largura 100% */
+    height: auto;
+  }
+  
+  .logo {
+    max-width: 100px;
+    text-align: center;
+  }
+  
+  footer{
+    margin-top: 50px;
+  }
