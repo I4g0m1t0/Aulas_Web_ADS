@@ -1,0 +1,16 @@
+{
+  "name": "exerciciologin",
+  "version": "1.0.0",
+  "description": "exercicico Web design com html, css, scss e js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "js"
+  ],
+  "author": "Iago rech Tramontin",
+  "license": "ISC"
+}
