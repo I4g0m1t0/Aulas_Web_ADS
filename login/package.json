@@ -4,7 +4,7 @@
   "description": "exercicico Web design com html, css, scss e js",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compilar": "sass --watch assets/css/styles.scss:assets/css/styles.css"
   },
   "keywords": [
     "html",
@@ -12,5 +12,8 @@
     "js"
   ],
   "author": "Iago rech Tramontin",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.77.8"
+  }
 }

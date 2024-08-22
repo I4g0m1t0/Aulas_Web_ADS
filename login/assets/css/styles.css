@@ -138,7 +138,7 @@ table {
 body {
   font-family: sans-serif; /* fonte sem serifa */
   font-size: 16px; /* tamanho da fonte, o tamnho padrão já é 16px */
-  background-color: rgb(188, 41, 95);
+  background-color: rgb(200, 60, 119);
 }
 
 .container {
@@ -151,6 +151,7 @@ body {
   margin-right: auto;
   padding: 20px;
   border-radius: 50px;
+  border-radius: 25px;
 }
 
 .img-fluid {
@@ -161,6 +162,10 @@ body {
 .text-center {
   text-align: center; /* Alinha o texto dos filhos do elemento*/
   color: black; /* Define a cor dos filhos do elemento*/
+}
+
+h1 {
+  color: rgb(200, 60, 119); /* Define a cor do texto */
 }
 
 input,
@@ -213,7 +218,22 @@ h1 {
   font-weight: bold;
 }
 .menu li a {
-  color: rgb(188, 41, 95);
+  color: rgb(200, 60, 119);
+}
+
+.position-relative {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.foto {
+  max-width: 200px;
+  transform: translateX(-30px);
+}
+
 footer {
   margin-top: 50px;
-}/*# sourceMappingURL=styles.css.map */}
+}
+
+/*# sourceMappingURL=styles.css.map */
