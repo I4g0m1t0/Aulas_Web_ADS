@@ -52,3 +52,37 @@ botaoClique.addEventListener("click", (e) => {
     const form = document.getElementById("form_exercicio");
     form.submit();
 })
+
+
+
+const form = document.getElementById("form_exercicio");
+
+form.addEventListener("submit",
+    async (e) => {
+        e.preventDefault();
+        //aqui eu busco o valor do input
+        const nome = document.getElementById("form_nome").value;
+        const email = document.getElementById("form_email").value;
+        const mensagem = document.getElementById("form_mensagem").value;
+        const data = {
+            nome,
+            email,
+            mensagem
+        }
+        const resposta = await fetch("http://localhost:3000/mensagem", {
+            method: "post",
+            headers: {'Content-type': 'application/json'},
+            body: JSON.stringify(data)
+        });
+        const result = await resposta.json();
+
+        const divResposta = document.createElement("div");
+        divResposta.innerText = result.mensagem;
+        const form = document.getElementById("form_exercicio");
+        // coloca no final da sua tag form
+        // insere o elemento divResposta
+        form.appendChild(divResposta);
+
+        console.log(result);
+    }
+)
