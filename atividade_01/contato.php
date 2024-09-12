@@ -1,4 +1,5 @@
 <?php 
+$title = "Contato";
 include 'includes/header.php';
 include 'includes/menu.php';
 ?>
@@ -19,9 +20,9 @@ include 'includes/menu.php';
                 </div>
                 <div>
                     <label for="form_mensagem">Digite sua mensagem</label>
-                    <textarea id="form_mensagem" placeholder="Digite a mensagem completa" name="mensagem"></textarea>
+                    <textarea id="form_mensagem" name="mensagem"></textarea>
                 </div>
-                <input type="submit" value="Enviar via atributo do input">
+                <input type="submit" value="Enviar">
             </form>
         </div>
     </div>

@@ -138,20 +138,7 @@ table {
 body {
   font-family: sans-serif; /* fonte sem serifa */
   font-size: 16px; /* tamanho da fonte, o tamnho padrão já é 16px */
-  background-color: rgb(200, 60, 119);
-}
-
-.container {
-  max-width: 600px; /* Largura máxima do container */
-  background-color: white;
-  /* border-width: 1px;
-      border-style: solid;
-      border-color: red; */
-  margin-left: auto;
-  margin-right: auto;
-  padding: 20px;
-  border-radius: 50px;
-  border-radius: 25px;
+  background-color: rgb(255, 255, 255);
 }
 
 .img-fluid {
@@ -165,7 +152,12 @@ body {
 }
 
 h1 {
-  color: rgb(200, 60, 119); /* Define a cor do texto */
+  color: rgb(0, 82, 159); /* Define a cor do texto */
+}
+
+.sobre p {
+  margin: 10px;
+  text-align: justify;
 }
 
 input,
@@ -176,7 +168,14 @@ label {
 
 input {
   padding: 10px;
+  margin-top: 10px;
   box-sizing: border-box;
+  background-color: white;
+}
+input:hover {
+  color: rgb(0, 82, 159);
+  transition: 0.5s;
+  border-color: rgb(0, 82, 159);
 }
 
 label {
@@ -192,6 +191,9 @@ textarea {
   box-sizing: border-box;
   width: 100%;
   height: 150px;
+  margin-top: 10px;
+  border: 2px solid black;
+  resize: none;
 }
 
 h1 {
@@ -210,15 +212,22 @@ h1 {
   justify-content: space-between;
   border-style: solid;
   border-width: 1px;
-  border-color: rgb(255, 213, 234);
+  border-radius: 50px;
+  border-color: rgb(254, 190, 16);
   padding: 10px;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 .menu li {
   font-weight: bold;
 }
 .menu li a {
-  color: rgb(200, 60, 119);
+  color: rgb(0, 82, 159);
+  text-decoration: none;
+}
+.menu li a:hover {
+  color: rgb(254, 190, 16);
+  transition: 0.5s;
 }
 
 .position-relative {
@@ -236,4 +245,51 @@ footer {
   margin-top: 50px;
 }
 
-/*# sourceMappingURL=styles.css.map */
+.container {
+  max-width: 800px; /* Largura máxima do container */
+  background-color: white;
+  border-width: 3px;
+  border-style: solid;
+  border-color: rgb(254, 190, 16);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  border-radius: 50px;
+  border-radius: 25px;
+}
+@media (max-width: 850px) {
+  .container {
+    max-width: 600px;
+  }
+}
+
+.elenco h1 {
+  text-align: center;
+}
+
+.elenco h2 {
+  text-align: center;
+}
+
+h2 {
+  font-size: 25px;
+  margin: 20px;
+}
+
+.goleiros, .defesa, .meio-campo, .ataque {
+  display: flex;
+  justify-content: center; /* Centraliza as imagens na linha */
+  align-items: center; /* Centraliza verticalmente */
+  gap: 15px; /* Espaçamento entre as imagens */
+  flex-wrap: wrap; /* Permite que as imagens "quebrem" linha se necessário */
+  margin-bottom: 20px;
+}
+
+.elenco img {
+  max-width: 30%;
+  height: auto;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 10px;
+}/*# sourceMappingURL=styles.css.map */

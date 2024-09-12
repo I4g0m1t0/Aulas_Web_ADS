@@ -3,5 +3,10 @@
   color: black; /* Define a cor dos filhos do elemento*/
 }
 h1 {
-  color: $cor-primaria; /* Define a cor do texto */
+  color: $cor-texto; /* Define a cor do texto */
+}
+
+.sobre p{
+  margin: 10px;
+  text-align: justify;
 }

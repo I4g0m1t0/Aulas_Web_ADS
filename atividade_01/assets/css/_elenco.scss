@@ -1,0 +1,31 @@
+.elenco h1{
+    text-align: center;
+}
+
+.elenco h2{
+    text-align: center;
+}
+
+h2{
+    font-size: 25px;
+    margin: 20px;
+}
+
+.goleiros, .defesa, .meio-campo, .ataque {
+    display: flex;
+    justify-content: center; /* Centraliza as imagens na linha */
+    align-items: center;     /* Centraliza verticalmente */
+    gap: 15px;               /* Espaçamento entre as imagens */
+    flex-wrap: wrap;         /* Permite que as imagens "quebrem" linha se necessário */
+    margin-bottom: 20px;
+}
+
+.elenco img {
+    max-width: 30%;       
+    height: auto;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 10px;  
+}
+
