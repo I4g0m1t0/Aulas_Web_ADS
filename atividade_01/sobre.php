@@ -12,6 +12,7 @@ include 'includes/menu.php';
         <p>A equipe é famosa não apenas pelos títulos, mas também pelo elenco de jogadores excepcionais que já vestiram sua camisa. Ao longo dos anos, o Real Madrid contou com grandes nomes como Alfredo Di Stéfano, Cristiano Ronaldo, Raúl González, e muitos outros jogadores lendários. O clube também é conhecido por seu icônico estádio, o Santiago Bernabéu, que é um dos mais emblemáticos do mundo e um verdadeiro templo do futebol.<p>
         <p>Além de seu sucesso em campo, o Real Madrid tem uma base de torcedores global apaixonada e um forte impacto cultural e econômico. O clube investe constantemente em sua infraestrutura, em novos talentos e em estratégias de marketing, o que contribui para sua crescente influência no cenário esportivo global.<p>
         <p>O Real Madrid também se destaca por sua filosofia de jogar um futebol ofensivo e atrativo, o que o torna um dos clubes mais emocionantes de se assistir. Com uma história rica e uma trajetória de sucesso contínuo, o Real Madrid permanece como um dos pilares do futebol mundial e continua a escrever novas páginas em sua ilustre história.</p>
+        <img src="assets/images/champions_winners.jpg" alt="champions winners">
     </div>
 </main>
 

@@ -156,7 +156,7 @@ h1 {
 }
 
 .sobre p {
-  margin: 10px;
+  margin-top: 10px;
   text-align: justify;
 }
 
@@ -242,7 +242,7 @@ h1 {
 }
 
 footer {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .container {
@@ -263,33 +263,106 @@ footer {
   }
 }
 
+.elenco {
+  text-align: center; /* Centraliza os títulos */
+}
+
 .elenco h1 {
   text-align: center;
 }
 
 .elenco h2 {
   text-align: center;
-}
-
-h2 {
+  font-family: "RM Neue", Arial, Helvetica, sans-serif;
   font-size: 25px;
-  margin: 20px;
+  margin: 25px;
+  font-weight: 700;
 }
 
-.goleiros, .defesa, .meio-campo, .ataque {
+.elenco-container {
   display: flex;
-  justify-content: center; /* Centraliza as imagens na linha */
-  align-items: center; /* Centraliza verticalmente */
-  gap: 15px; /* Espaçamento entre as imagens */
-  flex-wrap: wrap; /* Permite que as imagens "quebrem" linha se necessário */
-  margin-bottom: 20px;
+  justify-content: center; /* Centraliza as imagens dentro da div principal */
+  gap: 20px; /* Espaçamento entre as imagens */
+  flex-wrap: wrap;
 }
 
-.elenco img {
-  max-width: 30%;
-  height: auto;
-  border-style: solid;
-  border-color: black;
-  border-width: 2px;
+.jogador {
   border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  display: inline-block; /* Mantém o tamanho baseado no conteúdo interno */
+  text-align: center; /* Centraliza o conteúdo dentro de cada div de goleiro */
+}
+
+.jogador img {
+  max-width: 100%; /* A imagem ocupará toda a largura disponível sem alterar o tamanho */
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0), #1d2d50);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
+  transform: translateY(100%);
+  font-family: "RM Neue", Arial, Helvetica, sans-serif;
+}
+
+.card h3 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #ffd700;
+  font-size: 24px;
+}
+
+.card p {
+  margin: 0;
+  color: #dee5fd;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.card a {
+  margin-top: 20px;
+  color: #1d2d50;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  border: 1px solid #EE324E;
+  color: white;
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  font-family: "RM Neue", Arial, Helvetica, sans-serif;
+}
+
+.jogador:hover img {
+  transform: scale(1.1);
+}
+
+.jogador:hover .card {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.sobre img {
+  align-items: center;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
 }/*# sourceMappingURL=styles.css.map */
